@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'south',
-    'publicservant',
+    'publicservants',
+    'scores',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -84,3 +85,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+PS_IMAGES =  '/static/ps_images'
