@@ -4,7 +4,7 @@ from django.utils.encoding import smart_unicode
 # Create your models here.
 
 class PublicServant(models.Model):
-    psID=models.IntegerField(primary_key=True)
+    ID=models.IntegerField(primary_key=True)
     
     #profiles of public servants
     title= models.CharField(max_length=60, null=True, blank=True)
@@ -28,4 +28,4 @@ class PublicServant(models.Model):
     updated_Timestamp = models.DateTimeField(auto_now_add=False, auto_now=True)
 
     def __unicode__(self):
-        return smart_unicode(self.firstName) + smart_unicode(self.lastName)
+        return smart_unicode(self.firstName) + " " + smart_unicode(self.lastName)
